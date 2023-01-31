@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="container mx-auto px-4">
-        <div class="game-details border-b border-gray-700 pb-12 flex">
+        <div class="game-details border-b border-gray-700 pb-12 flex flex-col lg:flex-row">
             <div class="flex-none">
                 <img src="{{ asset('img/ff7.jpg') }}" alt="cover">
             </div>
-            <div class="ml-12 mr-64">
-                <h2 class="font-semibold text-4xl">Final Fantasy VII Remake</h2>
+            <div class="lg:ml-12 lg:mr-64 mt-4 lg:mt-0">
+                <h2 class="font-semibold text-4xl leading-tight">Final Fantasy VII Remake</h2>
                 <div class="text-gray-300">
                     <span>Adventure, RPG</span>
                     &middot;
@@ -29,7 +29,7 @@
                         </div>
                         <div class="ml-4 text-xs">Critic <br> Score</div>
                     </div>
-                    <div class="flex items-center space-x-4 ml-12">
+                    <div class="flex items-center space-x-4 mt-4 lg:mt-0 lg:ml-12">
                         <div class="w-8 h-8 bg-gray-700 rounded-full flex justify-center items-center">
                             <a href="#" class="hover:text-gray-300">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" /></svg>
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="mt-12">
+                <p class="mt-6 lg:mt-12">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi expedita veniam et error, itaque corporis voluptatibus deserunt, fuga a, repellendus porro quis aperiam! Minus voluptatem esse qui! Quae, temporibus vel.
                 </p>
                 <div class="mt-12">
@@ -61,7 +61,7 @@
 
         <div class="images-container border-b border-gray-700 pb-12 mt-8">
             <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Images</h2>
-            <div class="grid grid-cols-3 gap-12 mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
                 @for ($i = 0; $i < 6; $i++)
                 <div>
                     <a href="#">
